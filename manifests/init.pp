@@ -1,4 +1,4 @@
-node raspberrypi.lan {
+
 file { '/usr/local/nagios/etc/servers/':
     path         => '/usr/local/nagios/etc/servers/,
     ensure       => directory,
@@ -10,4 +10,4 @@ file { '/usr/local/nagios/etc/servers/':
                      'puppet:///modules/files/vmo2.cfg],
     sourceselect => all,
   }
-  }
+  
