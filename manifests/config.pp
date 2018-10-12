@@ -37,5 +37,5 @@ file { 'host.cfg':
   service { 'nagios':
   ensure    => running,
   enable    => true,
-  subscribe => File['/usr/local/nagios/etc/servers/*.cfg'],
+  subscribe => File['/usr/local/nagios/etc/servers/host.cfg'],
 }  }
