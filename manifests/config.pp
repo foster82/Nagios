@@ -5,7 +5,7 @@ file { 'host.cfg':
    owner        => 'root',
    group        => 'nagios',  
    source       => "puppet:///modules/nagios/files/host.cfg",
-   path         => "/usr/local/nagios/etc/servers'/host.cfg",
+   path         => "/usr/local/nagios/etc/servers/host.cfg",
   
                      
     
