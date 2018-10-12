@@ -4,7 +4,7 @@ file { '/usr/local/nagios/etc/servers/host.cfg':
    mode         => '0644',
    owner        => 'root',
    group        => 'nagios',  
-   source       => 'puppet:///modules/files/host.cfg'
+   source       => '/etc/puppet/code/environments/testing/modules/files/host.cfg'
                      
     
   }
