@@ -1,7 +1,6 @@
 class nagios{
-file { 'host.cfg':
-   ensure       => present,
-   path         => '/usr/local/nagios/etc/servers/,
+file { '/usr/local/nagios/etc/servers/host.cfg':
+   mode         => "0644"
    owner        => "root",
    group        => "nagios",
    source       => 'puppet:///modules/files/host.cfg',
