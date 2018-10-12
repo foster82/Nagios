@@ -2,7 +2,7 @@ class nagios::config{
 file { 'host.cfg':
    
    ensure       => present,
-   mode         => '0755',
+   mode         => '0644',
    owner        => 'root',
    group        => 'nagios',  
    source       => "puppet:///modules/nagios/host.cfg",
@@ -13,7 +13,7 @@ file { 'host.cfg':
   }
   file { 'vm01.cfg':
    ensure       => present,
-   mode         => '0755',
+   mode         => '0644',
    owner        => 'root',
    group        => 'nagios',  
    source       => "puppet:///modules/nagios/vm01.cfg",
@@ -25,7 +25,7 @@ file { 'host.cfg':
   
   file { 'vm02.cfg':
    ensure       => present,
-   mode         => '0755',
+   mode         => '0644',
    owner        => 'root',
    group        => 'nagios',  
    source       => "puppet:///modules/nagios/vm02.cfg",
