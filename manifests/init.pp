@@ -1,4 +1,4 @@
-
+class nagios{
 file { 'host.cfg':
    ensure       => present,
    path         => '/usr/local/nagios/etc/servers/,
@@ -9,3 +9,4 @@ file { 'host.cfg':
     
   }
   
+  }
