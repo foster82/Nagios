@@ -1,3 +1,3 @@
 class nagios{
-  include nagios:config
+  include nagios::config
   }
